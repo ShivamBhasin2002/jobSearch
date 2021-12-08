@@ -10,3 +10,9 @@ h1 {
 	font-size: 72px;
 	color: #0ccac4;
 }
+
+.modifications {
+	padding: 0 150px;
+	display: flex;
+	justify-content: space-between;
+}

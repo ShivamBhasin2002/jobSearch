@@ -1,7 +1,7 @@
 import React from 'react';
 import './search-box.styles.css';
 
-export const SearchBox = ({ placeHolder, handleChange, width }) => (
+const SearchBox = ({ placeHolder, handleChange, width }) => (
 	<input
 		className='search'
 		type='search'
@@ -10,3 +10,5 @@ export const SearchBox = ({ placeHolder, handleChange, width }) => (
 		style={{ width: width }}
 	/>
 );
+
+export default SearchBox;
