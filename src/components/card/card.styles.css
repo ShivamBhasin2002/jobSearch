@@ -1,18 +1,43 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #95dada;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 25px;
-    cursor: pointer;
-    -moz-osx-font-smoothing: grayscale;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform 0.25s ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid grey;
+	border-radius: 15px;
+	min-height: 150px;
+	padding: 25px;
+	cursor: pointer;
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: transform 0.25s ease-out;
+	background: #00b09b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#00b09b,
+		#96c93d
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#00b09b,
+		#96c93d
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-container:nth-child(2n) {
+	background: #800080; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffc0cb,
+		#800080
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffc0cb,
+		#800080
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card-container:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
-
